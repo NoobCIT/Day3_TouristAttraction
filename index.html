@@ -2,119 +2,191 @@
 <html lang='eng'>
   <meta charset='UTF-8'/>
   <meta name='viewport' content='width=device-width, intial-scale=1.0, maximum-scale=1.0'/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Maitree:400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Vast+Shadow" rel="stylesheet">
   <link href='styles.css' rel='stylesheet'>
   <body>
+    <div class='container'>
     <header>
+      <h1>San Francisco</h1>
       <nav>
         <ul>
-          <li>HOME</li>
-          <li>ABOUT</li>
-          <li>ART</li>
-          <li>FOOD</li>
-          <li>TRANSPORTATION</li>
+          <li>home</li>
+          <li>about</li>
+          <li>art</li>
+          <li>food</li>
+          <li>transportation</li>
         </ul>
       </nav>
     </header>
 
-    <div id='mainSlideShow'>
-    </div>
+    <ul id='mainSlideShow-container'>
+      <li class='mainSlides showing'><img src='./images/mainSlides1.jpg'></li>
+      <li class='mainSlides'><img src='./images/mainSlides2.jpg'></li>
+      <li class='mainSlides'><img src='./images/mainSlides3.jpg'></li>
+      <li class='mainSlides'><img src='./images/mainSlides4.jpg'></li>
+      <li id='arrow-left' class='fa arrow'>&#xf104;</li>
+      <li id='arrow-right' class='fa arrow'>&#xf105;</li>
+    </ul>
 
-    <div>
+    <div class='headline-container'>
       <p>Explore San Francisco</p>
+      <div id='explore'></div>
     </div>
 
-    <div id='secondSlideShow'>
-    </div>
+    <ul id='secondSlideShow-container'>
+      <li class='secondSlides showing mobile'>
+        <img src='./images/secondSlide1.jpg'>
+        <p>THE CITY</p>
+        <p><span class='slide-description'>Lorem ipsum dolor sit amet, odio congue ac consectetuer et. Sagittis quis sed vestibulum sed tellus phasellus, diam diam, cras elit.</span></p>
+      </li>
+      <li class='secondSlides showing'>
+        <img src='./images/secondSlide2.jpg'>
+        <p>FRESH FOOD</p>
+        <p><span class='slide-description'>Consectetuer consectetuer phasellus laoreet, ac sed donec euismod rutrum, nunc amet vel ac magna nec morbi, mattis eleifend aenean neque aenean vitae gravida.</span></p>
+      </li>
+      <li class='secondSlides showing'>
+        <img src='./images/secondSlide3.jpg'>
+        <p>SF GIANTS</p>
+        <p><span class='slide-description'>At tempus eros aenean scelerisque habitasse wisi, sem fusce, vivamus sit. Dapibus tempor in, pede nibh mauris orci penatibus, amet arcu.</span></p>
+      </p>
+      <li class='secondSlides showing'>
+        <img src='./images/secondSlide4.jpg'>
+        <p>FISHERMANS</p>
+        <p><span class='slide-description'>Nascetur vel. Pellentesque volutpat cursus et, platea at. Urna odio, congue gravida nec nullam, lectus cras vel lacinia placerat et, id purus justo libero odit, est potenti eu donec ut.</span></p>
+      </li>
+      <li class='secondSlides'>
+        <img src='./images/secondSlide5.jpg'>
+        <p>ALCATRAZ</p>
+        <p><span class='slide-description'>Libero lacinia arcu cum, sollicitudin integer, volutpat nam vestibulum hendrerit eget, tortor sed lobortis diam enim libero. Ut blandit.</span></p>
+      </li>
+      <li class='secondSlides'>
+        <img src='./images/secondSlide6.jpg'>
+        <p>NEIGHBORHOODS</p>
+        <p><span class='slide-description'>Orci tellus ornare ac urna, netus in amet, eget enim augue rutrum facilisis. Vulputate cursus dolor habitant pede, eget proin ullamcorper elit, neque enim vivamus, pede at convallis.</span></p>
+      </li>
+      <li class='secondSlides'>
+        <img src='./images/secondSlide7.jpg'>
+        <p>THE FOG</p>
+        <p><span class='slide-description'>Justo dictum feugiat cursus imperdiet, mollis consequat faucibus amet, lorem eget viverra aliquam ipsum porttitor, bibendum officia a imperdiet fusce.</span></p>
+      </li>
+      <li class='secondSlides'>
+        <img src='./images/secondSlide8.jpg'>
+        <p>PUBLIC TRANSPO</p>
+        <p><span class='slide-description'>Lorem ipsum dolor sit amet, odio congue ac consectetuer et. Sagittis quis sed vestibulum sed tellus phasellus, diam diam, cras elit.</span></p>
+      </li>
+      <li id='second-arrow-left' class='fa arrow'>&#xf104;</li>
+      <li id='second-arrow-right' class='fa arrow'>&#xf105;</li>
+    </ul>
 
-    <div>
+    <div class='headline-container'>
       <p>Highlights of the Day</p>
+      <div id='highlights'></div>
     </div>
 
-    <div>
-      <div>
+    <div id='news-container'>
+      <div id='newsleft-container'>
         <div>
-          <img src='#'>
+          <img src='./images/pic1.jpg'>
         </div>
-        <div>
-          <div>
-            <p>date</p>
+        <div id='news-article-container'>
+          <div id='news-article-left'>
+            <p>14</p>
             <p>MAY</p>
           </div>
-          <div>
-            <p>Title</p>
-            <p>By Someone</p>
-            <p>Content</p>
+          <div id='news-article-right'>
+            <p>New Construction</p>
+            <p style='color: #808080'>By Mr. Architect</p>
+            <p style='font-size: 14px'>mpetus eligendi iudicabit eu per, vix no dolores assueverit concludaturque, sed zril integre ad.  mpetus eligendi iudicabit eu per, vix no dolores assueverit concludaturque, sed zril integre ad.</p>
           </div>
         </div>
       </div>
-      <div>
-        <div>
+      <div id='newsright-container'>
+        <div class='headline-container'>
           <p>Recent</p>
+          <div id='recent'></div>
         </div>
-        <div>
+        <div class='sub-article-container'>
           <div>
-            <img src='#'>
+            <img src='./images/pic2.jpg'>
           </div>
           <div>
-            <p>title</p>
-            <p>By who</p>
-            <p>contnue Reading</p>
-          </div>
-        </div>
-        <div>
-          <div>
-            <img src='#'>
-          </div>
-          <div>
-            <p>title</p>
-            <p>By who</p>
-            <p>contnue Reading</p>
+            <p>Most Expensive City</p>
+            <p style='color: #808080'>By SF Res</p>
+            <p style='font-size: 14px'>Continue Reading</p>
           </div>
         </div>
-        <div>
+        <div class='sub-article-container'>
           <div>
-            <img src='#'>
+            <img src='./images/pic3.jpg'>
           </div>
           <div>
-            <p>title</p>
-            <p>By who</p>
-            <p>contnue Reading</p>
+            <p>Homeless Out of Control</p>
+            <p style='color: #808080'>By Everyone</p>
+            <p style='font-size: 14px'>Continue Reading</p>
           </div>
         </div>
-        <div>
+        <div class='sub-article-container'>
           <div>
-            <img src='#'>
+            <img src='./images/pic4.jpg'>
           </div>
           <div>
-            <p>title</p>
-            <p>By who</p>
-            <p>contnue Reading</p>
+            <p>Tech Boom</p>
+            <p style='color: #808080'>By Only Techies</p>
+            <p style='font-size: 14px'>Continue Reading</p>
           </div>
         </div>
       </div>
-    </div>
-
-    <div>
-      <p>Gallery</p>
-    </div>
-
-    <div id='thirdSlideShow'>
     </div>
 
     <div id='socialmedia'>
+      <div class='sm1'></div>
+      <i class='fa'>&#xf230;</i>
+      <i class='fa'>&#xf081;</i>
+      <i class='fa'>&#xf1a2;</i>
+      <div class='sm1'></div>
     </div>
 
-    <div id='footer'>
-      <div>
-        <div>ABOUT</div>
-        <div>ART</div>
-        <div>FOOD</div>
-        <div>TRANSPORTATION</div>
+    <footer>
+      <div id='footer-nav'>
+        <div id='about'>
+          <h3>ABOUT</h3>
+          <p>Overview</p>
+          <p>History</p>
+          <p>Attractions</p>
+          <p>Contact</p>
+        </div>
+        <div id='art'>
+          <h3>ART</h3>
+          <p>Districts</p>
+          <p>Styles</p>
+          <p>Museums</p>
+          <p>Gardens</p>
+          <p>Crafts</p>
+        </div>
+        <div id='food'>
+          <h3>FOOD</h3>
+          <p>Must Eats</p>
+          <p>Famous</p>
+          <p>Bakeries</p>
+          <p>Wine</p>
+          <p>Vegan</p>
+        </div>
+        <div id='transportation'>
+          <h3>TRANSPORTATION</h3>
+          <p>BART</p>
+          <p>CalTrain</p>
+          <p>Muni</p>
+          <p>Car</p>
+          <p>Routes</p>
+        </div>
       </div>
       <div id='copyright'>
         <p>&copy; | All Rights Reserved.</p>
       </div>
-    </div>
-
+    </footer>
+  </div>
+  <script src='scripts.js'></script>
   </body>
 </html>

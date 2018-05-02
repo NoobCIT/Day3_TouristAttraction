@@ -1,0 +1,311 @@
+/*========= GLOBAL =========*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Maitree', serif;
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+/*font-family: 'Vast Shadow', cursive;/
+
+/*========= HEADER =========*/
+
+h1 {
+  font-size: 3em;
+  font-family: 'Vast Shadow', cursive;
+  margin: 12px 0;
+  text-align: center;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+}
+
+nav ul li {
+  margin: 12px 12px;
+  font-size: 18px;
+}
+
+/*========= MAIN SLIDES =========*/
+
+.mainSlides {
+  display: none;
+}
+
+.mainSlides.showing {
+  display: block;
+}
+
+.mainSlides.showing img {
+  width: 100%;
+}
+
+#mainSlideShow-container {
+  position: relative;
+  width: 100%;
+}
+
+.arrow {
+  position: absolute;
+  color: #ffffff;
+  font-size: 36px;
+  font-weight: 700;
+  border: 4px solid #ffffff;
+  height: 48px;
+  width: 48px;
+  border-radius: 24px;
+  text-align: center;
+  line-height: 40px;
+  vertical-align: middle;
+  opacity: 0.5;
+}
+
+.arrow:hover {
+  opacity: 1.0;
+}
+
+#arrow-left {
+  left: 24px;
+  top: 50%;
+}
+
+#arrow-right {
+  right: 24px;
+  top: 50%;
+}
+
+/*========= HEADLINE =========*/
+
+.headline-container {
+  margin: 12px 12px;
+}
+
+#explore, #highlights, #recent, .sm1 {
+  height: 2px;
+  width: 100%;
+  background-color: #000000;
+}
+
+/*========= SECOND SLIDES =========*/
+
+.secondSlides {
+  display: none;
+  margin: 12px;
+}
+
+.secondSlides.showing {
+  display: block;
+}
+
+.secondSlides.showing img {
+  width: 100%;
+}
+
+#secondSlideShow-container {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-grow: 1;
+  margin-bottom: 24px;
+}
+
+.arrow {
+  position: absolute;
+  color: #ffffff;
+  font-size: 36px;
+  font-weight: 700;
+  border: 4px solid #ffffff;
+  height: 48px;
+  width: 48px;
+  border-radius: 24px;
+  text-align: center;
+  line-height: 40px;
+  vertical-align: middle;
+  opacity: 0.5;
+}
+
+.arrow:hover {
+  opacity: 1.0;
+}
+
+#second-arrow-left {
+  left: 12px;
+  top: 10%;
+}
+
+#second-arrow-right {
+  right: 12px;
+  top: 10%;
+}
+
+.slide-description {
+  color: #808080;
+  font-size: 14px;
+}
+
+/*========= NEWS =========*/
+
+#news-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+#newsright-container, #newsleft-container {
+  width: 50%;
+  margin: 12px;
+}
+
+#news-article-container {
+  display: flex;
+  flex-direction: row;
+  margin: 12px;
+}
+
+#news-article-left {
+  margin: 6px;
+  text-align: center;
+}
+
+#news-article-right {
+  margin: 6px;
+}
+
+#news-container img {
+  width: 100%;
+}
+
+.sub-article-container {
+  display: flex;
+  flex-direction: row;
+  margin: 12px;
+}
+
+#newsright-container img {
+  width: 75%;
+}
+
+.sub-article-container div {
+  width: 100%;
+}
+
+/*========= SOCIAL MEDIA =========*/
+
+#socialmedia {
+  text-align: center;
+  width: 100%;
+}
+
+#socialmedia i {
+  margin: 12px;
+  font-size: 48px;
+}
+
+i:hover {
+  color: #808080;
+}
+
+/*========= FOOTER =========*/
+
+#footer-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 24px 0;
+  flex-wrap: wrap;
+}
+
+#copyright {
+  text-align: center;
+}
+
+/*========= MEDIA QUERIES =========*/
+
+@media only screen and (max-width: 800px) {
+  #transportation {
+    flex-basis: 100%;
+    text-align: center;
+    margin: 24px 0;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  #food {
+    flex-basis: 100%;
+    text-align: center;
+    margin: 24px 0;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+
+  /*=== HEADER ===*/
+  nav ul li {
+    margin: 12px 6px;
+  }
+
+  /*=== NEWS ===*/
+  #news-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #newsleft-container, #newsright-container {
+    width: 95%;
+  }
+
+  /*=== SECOND SLIDER ===*/
+  .secondSlides.showing {
+    display: none;
+  }
+
+  .secondSlides.showing.mobile {
+    display: block;
+    width: 100%;
+  }
+
+  .secondSlides.mobile {
+    display: block;
+    width: 100%;
+  }
+
+  .secondSlides.mobile img {
+    display: block;
+    width: 100%;
+  }
+
+  #second-arrow-left {
+    top: 27%;
+  }
+
+  #second-arrow-right {
+    top: 27%;
+  }
+
+}
+
+@media only screen and (max-width: 600px) {
+  #art, #about {
+    flex-basis: 100%;
+    text-align: center;
+    margin: 24px 0;
+  }
+}
